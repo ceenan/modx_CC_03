@@ -1,0 +1,194 @@
+
+
+
+html h1 {
+  margin: 0;
+}
+
+
+body {
+  font-size: 1.1em;
+  font-family: "Helvetica Neue", Helvetica, Verdana, sans-serif;
+  background-color: #8FB2D8
+}
+
+
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #B0D2E8;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  overflow: auto;
+  
+ 
+ 
+}
+
+
+header {
+  margin: 5%;
+  clear: both;
+}
+
+#slogan {
+  padding-right: 10%;
+
+}
+
+.logo {
+  width: 70%;
+  float: right;
+  }
+
+.nav{
+  background-color: white;
+  -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+  border-radius: 10px;
+  width: 180px;
+  margin: 20px 20px  20px;
+  padding: 5px;
+  float: left;
+  display: inline-block;
+  clear: left;
+
+  }
+
+
+  p li {
+
+  color: darkblue;
+  text-decoration: none;
+  
+}
+ 	
+.page_heading {
+    margin-left: 20px;
+} 
+	
+.author_information {
+    margin-left: 5%;
+}
+
+.contact_information {
+    margin-left: 20px;
+}
+
+.validation_badge {
+  float: right;
+  clear: both;
+  width: 10%;
+}
+
+
+
+.articles{
+  width:60%;
+  margin: 5px 18px;
+  padding: 0px;
+  float:left;
+  
+  
+}
+
+.heading{
+  width: 30%;
+  }
+
+.article_heading {
+  width: 70%;
+  margin-left: 5%;
+  padding: 2%;
+  
+
+}
+
+.article_content {
+  margin: 0 5% 0 5%;
+  padding: 2%;
+
+  
+
+}
+
+
+
+.prompt_text {
+  font-size: 24px;
+  padding-left: 10px;
+  color: #000;
+}
+
+
+.form_field_table {
+  margin-left: 30px;
+  border: none;
+}
+.form_field_table td {
+
+  color: #00f;
+}
+
+
+form {
+  color: #00f;
+}
+
+
+.buttons {
+  float: right;
+}
+
+.float_right {
+  float:;
+  
+}
+
+
+
+footer {
+  font-size: .80em;
+  min-height: 40px;
+  text-align: center;
+  margin: 20px;
+  clear: both;
+
+}
+
+@media (max-width: 600px) {
+  .validation_badge {
+    display: none;
+  }
+  .article_heading {
+    border: none;
+    background-color: ;
+  }
+  .container {
+    width: 100%;
+    margin:0;
+    background-color: #B0D2E8;
+    clear: both;
+  }
+  
+  .nav{
+    clear: both;
+    width:180px; 
+    display:inline-block;
+
+  }
+  .logo{
+
+display:none;
+
+  }
+  .shot{
+
+    display:none;
+  }
+
+}
+
