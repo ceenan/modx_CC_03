@@ -51,10 +51,11 @@ header {
   border-radius: 10px;
   width: 180px;
   margin: 20px 20px  20px;
-  padding: 5px;
-  float: left;
-  display: inline-block;
-  clear: left;
+  padding: 10px 10px;
+  
+ float: left;
+  
+  
 
   }
 
@@ -87,10 +88,10 @@ header {
 
 
 .articles{
-  width:60%;
+  width:70%;
   margin: 5px 18px;
-  padding: 0px;
-  float:left;
+  padding: 5px;
+  float: left;
   
   
 }
@@ -103,6 +104,8 @@ header {
   width: 70%;
   margin-left: 5%;
   padding: 2%;
+
+
   
 
 }
@@ -110,6 +113,9 @@ header {
 .article_content {
   margin: 0 5% 0 5%;
   padding: 2%;
+  width: 70%;
+
+  
 
   
 
