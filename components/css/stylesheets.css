@@ -13,6 +13,11 @@ body {
 }
 
 
+h2{
+color: white;
+font-family: Verdana;
+}
+
 
 .container {
   width: 90%;
@@ -22,6 +27,9 @@ body {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
+  -webkit-box-shadow:0px 0px 50px 0px #333333;
+  -moz-box-shadow:0px 0px 50px 0px #333333;
+  box-shadow: 0px 0px 50px 0px #333333;
   overflow: auto;
   
  
@@ -50,21 +58,21 @@ header {
     -moz-border-radius: 10px;
   border-radius: 10px;
   width: 180px;
-  margin: 20px 20px  20px;
+  margin: 20px 10px  20px 40px;
   padding: 10px 10px;
-  
- float: left;
-  
-  
-
+  float: left;
   }
 
+li{
+ 
+list-style: none;
+}
 
-  p li {
+li a{
 
   color: darkblue;
-  text-decoration: none;
-  
+  text-decoration:none ;
+  font-family: verdana;
 }
  	
 .page_heading {
@@ -92,9 +100,8 @@ header {
   margin: 5px 18px;
   padding: 5px;
   float: left;
-  
-  
-}
+  }
+
 
 .heading{
   width: 30%;
@@ -104,11 +111,11 @@ header {
   width: 70%;
   margin-left: 5%;
   padding: 2%;
-
-
-  
-
 }
+
+
+
+
 
 .article_content {
   margin: 0 5% 0 5%;
@@ -129,9 +136,10 @@ header {
   margin-left: 30px;
   border: none;
 }
-.form_field_table td {
 
-  color: #00f;
+
+.form_field_table td {
+ color: #00f;
 }
 
 
