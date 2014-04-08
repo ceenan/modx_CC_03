@@ -7,7 +7,7 @@
 #
 # Host: localhost (MySQL 5.5.33)
 # Database: modx_CC_03
-# Generation Time: 2014-04-08 19:30:22 +0000
+# Generation Time: 2014-04-08 23:23:39 +0000
 # ************************************************************
 
 
@@ -882,7 +882,7 @@ LOCK TABLES `modx_categories` WRITE;
 INSERT INTO `modx_categories` (`id`, `parent`, `category`)
 VALUES
 	(1,0,'pages'),
-	(2,0,'articles');
+	(4,0,'articles');
 
 /*!40000 ALTER TABLE `modx_categories` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -907,8 +907,8 @@ INSERT INTO `modx_categories_closure` (`ancestor`, `descendant`, `depth`)
 VALUES
 	(1,1,0),
 	(0,1,0),
-	(2,2,0),
-	(0,2,0);
+	(0,4,0),
+	(4,4,0);
 
 /*!40000 ALTER TABLE `modx_categories_closure` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -1435,7 +1435,79 @@ VALUES
 	(147,1,'2014-04-08 18:39:38','chunk_update','modChunk','3'),
 	(148,1,'2014-04-08 18:46:14','chunk_update','modChunk','3'),
 	(149,1,'2014-04-08 18:47:59','chunk_update','modChunk','3'),
-	(150,1,'2014-04-08 18:53:46','chunk_update','modChunk','3');
+	(150,1,'2014-04-08 18:53:46','chunk_update','modChunk','3'),
+	(151,1,'2014-04-08 19:42:21','chunk_update','modChunk','12'),
+	(152,1,'2014-04-08 19:42:42','chunk_update','modChunk','12'),
+	(153,1,'2014-04-08 19:43:07','chunk_update','modChunk','12'),
+	(154,1,'2014-04-08 19:45:59','chunk_update','modChunk','12'),
+	(155,1,'2014-04-08 19:46:31','chunk_update','modChunk','12'),
+	(156,1,'2014-04-08 19:46:49','chunk_update','modChunk','3'),
+	(157,1,'2014-04-08 19:46:57','chunk_update','modChunk','3'),
+	(158,1,'2014-04-08 19:47:22','chunk_update','modChunk','12'),
+	(159,1,'2014-04-08 19:48:37','chunk_update','modChunk','12'),
+	(160,1,'2014-04-08 19:49:10','chunk_update','modChunk','12'),
+	(161,1,'2014-04-08 19:50:40','chunk_update','modChunk','12'),
+	(162,1,'2014-04-08 19:51:07','chunk_update','modChunk','12'),
+	(163,1,'2014-04-08 19:52:42','chunk_update','modChunk','12'),
+	(164,1,'2014-04-08 20:25:25','chunk_update','modChunk','3'),
+	(165,1,'2014-04-08 21:26:13','chunk_update','modChunk','12'),
+	(166,1,'2014-04-08 21:37:11','tv_create','modTemplateVar','1'),
+	(167,1,'2014-04-08 21:41:00','tv_update','modTemplateVar','1'),
+	(168,1,'2014-04-08 21:44:25','template_create','modTemplate','3'),
+	(169,1,'2014-04-08 21:45:04','category_create','modCategory','3'),
+	(170,1,'2014-04-08 21:45:23','template_update','modTemplate','3'),
+	(171,1,'2014-04-08 21:47:21','tv_update','modTemplateVar','1'),
+	(172,1,'2014-04-08 21:48:34','tv_update','modTemplateVar','1'),
+	(173,1,'2014-04-08 21:51:44','template_delete','modTemplate','3'),
+	(174,1,'2014-04-08 21:51:56','category_delete','modCategory','3'),
+	(175,1,'2014-04-08 21:52:35','tv_update','modTemplateVar','1'),
+	(176,1,'2014-04-08 21:54:26','resource_update','modResource','4'),
+	(177,1,'2014-04-08 22:00:54','chunk_update','modChunk','12'),
+	(178,1,'2014-04-08 22:02:54','resource_update','modResource','2'),
+	(179,1,'2014-04-08 22:03:09','resource_update','modResource','3'),
+	(180,1,'2014-04-08 22:04:10','chunk_update','modChunk','12'),
+	(181,1,'2014-04-08 22:04:25','chunk_update','modChunk','3'),
+	(182,1,'2014-04-08 22:09:39','resource_update','modResource','2'),
+	(183,1,'2014-04-08 22:11:31','resource_update','modResource','2'),
+	(184,1,'2014-04-08 22:16:30','tv_update','modTemplateVar','1'),
+	(185,1,'2014-04-08 22:17:30','resource_update','modResource','4'),
+	(186,1,'2014-04-08 22:18:20','resource_update','modResource','5'),
+	(187,1,'2014-04-08 22:18:38','resource_update','modResource','5'),
+	(188,1,'2014-04-08 22:19:04','resource_update','modResource','1'),
+	(189,1,'2014-04-08 22:21:04','chunk_update','modChunk','3'),
+	(190,1,'2014-04-08 22:21:22','chunk_update','modChunk','3'),
+	(191,1,'2014-04-08 22:23:06','template_update','modTemplate','1'),
+	(192,1,'2014-04-08 22:37:56','chunk_update','modChunk','12'),
+	(193,1,'2014-04-08 22:39:35','resource_update','modResource','2'),
+	(194,1,'2014-04-08 22:49:44','chunk_update','modChunk','12'),
+	(195,1,'2014-04-08 22:50:34','chunk_update','modChunk','12'),
+	(196,1,'2014-04-08 22:51:23','chunk_update','modChunk','7'),
+	(197,1,'2014-04-08 22:57:21','resource_update','modResource','4'),
+	(198,1,'2014-04-08 22:57:36','resource_update','modResource','5'),
+	(199,1,'2014-04-08 23:00:53','resource_update','modResource','2'),
+	(200,1,'2014-04-08 23:01:20','resource_update','modResource','3'),
+	(201,1,'2014-04-08 23:02:26','chunk_update','modChunk','11'),
+	(202,1,'2014-04-08 23:02:46','chunk_update','modChunk','11'),
+	(203,1,'2014-04-08 23:05:55','resource_update','modResource','4'),
+	(204,1,'2014-04-08 23:06:15','resource_update','modResource','5'),
+	(205,1,'2014-04-08 23:12:43','resource_update','modResource','5'),
+	(206,1,'2014-04-08 23:13:27','resource_update','modResource','5'),
+	(207,1,'2014-04-08 23:15:02','chunk_update','modChunk','13'),
+	(208,1,'2014-04-08 23:16:24','chunk_update','modChunk','8'),
+	(209,1,'2014-04-08 23:16:48','chunk_update','modChunk','7'),
+	(210,1,'2014-04-08 23:17:12','chunk_update','modChunk','13'),
+	(211,1,'2014-04-08 23:17:17','chunk_update','modChunk','13'),
+	(212,1,'2014-04-08 23:17:42','chunk_update','modChunk','6'),
+	(213,1,'2014-04-08 23:17:59','chunk_update','modChunk','9'),
+	(214,1,'2014-04-08 23:18:30','category_delete','modCategory','2'),
+	(215,1,'2014-04-08 23:19:15','category_create','modCategory','4'),
+	(216,1,'2014-04-08 23:19:37','chunk_update','modChunk','9'),
+	(217,1,'2014-04-08 23:19:49','chunk_update','modChunk','8'),
+	(218,1,'2014-04-08 23:20:07','chunk_update','modChunk','6'),
+	(219,1,'2014-04-08 23:20:20','chunk_update','modChunk','7'),
+	(220,1,'2014-04-08 23:20:31','chunk_update','modChunk','13'),
+	(221,1,'2014-04-08 23:21:23','template_update','modTemplate','2'),
+	(222,1,'2014-04-08 23:22:11','template_update','modTemplate','2');
 
 /*!40000 ALTER TABLE `modx_manager_log` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -1496,6 +1568,15 @@ CREATE TABLE `modx_media_sources_elements` (
   PRIMARY KEY (`source`,`object`,`object_class`,`context_key`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+LOCK TABLES `modx_media_sources_elements` WRITE;
+/*!40000 ALTER TABLE `modx_media_sources_elements` DISABLE KEYS */;
+
+INSERT INTO `modx_media_sources_elements` (`source`, `object_class`, `object`, `context_key`)
+VALUES
+	(1,'modTemplateVar',1,'web');
+
+/*!40000 ALTER TABLE `modx_media_sources_elements` ENABLE KEYS */;
+UNLOCK TABLES;
 
 
 # Dump of table modx_member_groups
@@ -1703,6 +1784,7 @@ LOCK TABLES `modx_register_messages` WRITE;
 
 INSERT INTO `modx_register_messages` (`topic`, `id`, `created`, `valid`, `accessed`, `accesses`, `expires`, `payload`, `kill`)
 VALUES
+	(1,'c4ca4238a0b923820dcc509a6f75849b','2014-04-08 23:22:15','2014-04-08 23:22:15',NULL,0,1396999695,'if (time() > 1396999695) return null;\nreturn 1;\n',0),
 	(2,'533b72ba9b5e29.49650416','2014-04-02 02:15:42','1970-01-01 00:00:00',NULL,0,1396405242,'if (time() > 1396405242) return null;\nreturn array (\n  \'pagetitle\' => \'Value proposition statement\',\n  \'longtitle\' => \'Value proposition statement\',\n  \'description\' => \'\',\n  \'introtext\' => \'\',\n  \'template\' => \'2\',\n  \'alias\' => \'\',\n  \'menutitle\' => \'\',\n  \'link_attributes\' => \'\',\n  \'hidemenu\' => \'0\',\n  \'published\' => \'1\',\n  \'id\' => \'2\',\n  \'type\' => \'document\',\n  \'context_key\' => \'web\',\n  \'content\' => \'        \r\n        <div class=\"article_content\">\r\n          \r\n\r\n          \r\n\r\n          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra ultricies nibh, in interdum tellus ultrices id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. </p>\r\n\r\n         \r\n\r\n          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra ultricies nibh, in interdum tellus ultrices id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse urna lorem, imperdiet a mattis sed, blandit id elit. </p>\r\n\r\n          \r\n        </div> \r\n      </article>\r\n    </section>\',\n  \'create-resource-token\' => \'533b72ba9b5e29.49650416\',\n  \'reloaded\' => \'0\',\n  \'parent\' => \'1\',\n  \'parent-original\' => \'1\',\n  \'parent-cmb\' => \'Home (1)\',\n  \'class_key\' => \'modDocument\',\n  \'content_type\' => \'1\',\n  \'content_dispo\' => \'0\',\n  \'menuindex\' => \'0\',\n  \'publishedon\' => \'2014-04-01 23:12:00\',\n  \'pub_date\' => \'\',\n  \'unpub_date\' => \'\',\n  \'isfolder\' => \'0\',\n  \'searchable\' => \'1\',\n  \'richtext\' => \'1\',\n  \'cacheable\' => \'1\',\n  \'syncsite\' => \'1\',\n  \'deleted\' => \'0\',\n  \'uri_override\' => \'0\',\n  \'uri\' => \'\',\n  \'ta\' => \'        \r\n        <div class=\"article_content\">\r\n          \r\n\r\n          \r\n\r\n          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra ultricies nibh, in interdum tellus ultrices id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. </p>\r\n\r\n         \r\n\r\n          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra ultricies nibh, in interdum tellus ultrices id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse urna lorem, imperdiet a mattis sed, blandit id elit. </p>\r\n\r\n          \r\n        </div> \r\n      </article>\r\n    </section>\',\n  \'action\' => \'reload\',\n  \'reloadOnly\' => \'true\',\n  \'resource_groups\' => \'[]\',\n  \'HTTP_MODAUTH\' => \'modx533b3da0c0fff4.95897906_1533b3ddf09e0f7.53679217\',\n);\n',0),
 	(2,'533b72d82fef96.55272412','2014-04-02 02:15:59','1970-01-01 00:00:00',NULL,0,1396405259,'if (time() > 1396405259) return null;\nreturn array (\n  \'pagetitle\' => \'Current Promotion\',\n  \'longtitle\' => \'Current Promotion title\',\n  \'description\' => \'\',\n  \'introtext\' => \'\',\n  \'template\' => \'2\',\n  \'alias\' => \'\',\n  \'menutitle\' => \'\',\n  \'link_attributes\' => \'\',\n  \'hidemenu\' => \'0\',\n  \'published\' => \'1\',\n  \'id\' => \'3\',\n  \'type\' => \'document\',\n  \'context_key\' => \'web\',\n  \'content\' => \'<div class=\"article_content\">\r\n          \r\n\r\n         \r\n\r\n          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra ultricies nibh, in interdum tellus ultrices id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. </p>\r\n\r\n      \r\n\r\n          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra ultricies nibh, in interdum tellus ultrices id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse urna lorem, imperdiet a mattis sed, blandit id elit. </p>\r\n\r\n          \r\n        </div> \',\n  \'create-resource-token\' => \'533b72d82fef96.55272412\',\n  \'reloaded\' => \'0\',\n  \'parent\' => \'1\',\n  \'parent-original\' => \'1\',\n  \'parent-cmb\' => \'Home (1)\',\n  \'class_key\' => \'modDocument\',\n  \'content_type\' => \'1\',\n  \'content_dispo\' => \'0\',\n  \'menuindex\' => \'1\',\n  \'publishedon\' => \'2014-04-01 23:16:00\',\n  \'pub_date\' => \'\',\n  \'unpub_date\' => \'\',\n  \'isfolder\' => \'0\',\n  \'searchable\' => \'1\',\n  \'richtext\' => \'1\',\n  \'cacheable\' => \'1\',\n  \'syncsite\' => \'1\',\n  \'deleted\' => \'0\',\n  \'uri_override\' => \'0\',\n  \'uri\' => \'\',\n  \'ta\' => \'<div class=\"article_content\">\r\n          \r\n\r\n         \r\n\r\n          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra ultricies nibh, in interdum tellus ultrices id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. </p>\r\n\r\n      \r\n\r\n          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra ultricies nibh, in interdum tellus ultrices id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse urna lorem, imperdiet a mattis sed, blandit id elit. </p>\r\n\r\n          \r\n        </div> \',\n  \'action\' => \'reload\',\n  \'reloadOnly\' => \'true\',\n  \'resource_groups\' => \'[]\',\n  \'HTTP_MODAUTH\' => \'modx533b3da0c0fff4.95897906_1533b3ddf09e0f7.53679217\',\n);\n',0);
 
@@ -1782,7 +1864,7 @@ LOCK TABLES `modx_session` WRITE;
 
 INSERT INTO `modx_session` (`id`, `access`, `data`)
 VALUES
-	('8b3fc8377c78fff7771d36acd446002e',1396982238,'modx.user.contextTokens|a:1:{s:3:\"mgr\";i:1;}modx.mgr.user.token|s:52:\"modx533b3da0c0fff4.95897906_1533ef97fb86f60.84614805\";modx.mgr.session.cookie.lifetime|i:0;newResourceTokens|a:56:{i:0;s:23:\"533efce1d64f24.77577143\";i:1;s:23:\"533f0538525557.26945069\";i:2;s:23:\"533f058a634962.96848991\";i:3;s:23:\"533f06847bbad6.40190637\";i:4;s:23:\"533f07815d7984.14997492\";i:5;s:23:\"533f07931c6695.19383589\";i:6;s:23:\"533f079d9ac528.98732226\";i:7;s:23:\"533f0a2c399361.14064597\";i:8;s:23:\"533f0aa68e32d7.02773253\";i:9;s:23:\"533f0ab2efdae6.14007440\";i:10;s:23:\"533f0ae4ee5411.76831122\";i:11;s:23:\"533f0b37076ac5.84861176\";i:12;s:23:\"533f122fcaf650.79747856\";i:13;s:23:\"533f124b626892.62025129\";i:14;s:23:\"534162774bab44.49908582\";i:15;s:23:\"53416389387eb3.65059856\";i:16;s:23:\"5341639ae65236.56753649\";i:17;s:23:\"534163a7d9ab31.00836807\";i:18;s:23:\"534163bc4b2045.26470868\";i:19;s:23:\"5342f9b871dec6.01987725\";i:20;s:23:\"5342fa6fbe7c32.40966491\";i:21;s:23:\"5342fa895ea6a7.20626607\";i:22;s:23:\"5342fa96995920.92732360\";i:23;s:23:\"5342fad8dcccd2.54041696\";i:24;s:23:\"5342fae87991c1.36263653\";i:25;s:23:\"5342fd2fed4d14.55938974\";i:26;s:23:\"5342fd4d718e97.32475971\";i:27;s:23:\"5342fdf5af16f4.97012286\";i:28;s:23:\"5342ffc8a43ff0.13945435\";i:29;s:23:\"534300770c9485.51138818\";i:30;s:23:\"534300d296bcc8.86605898\";i:31;s:23:\"534300ec4c41f4.73003778\";i:32;s:23:\"534300ffd96868.50619964\";i:33;s:23:\"5343011a2c9656.03837067\";i:34;s:23:\"534304723c3085.46078731\";i:35;s:23:\"534306710589a6.56594530\";i:36;s:23:\"53430687e88950.32321030\";i:37;s:23:\"534307c97e99a8.49395375\";i:38;s:23:\"534307d63585c6.10744670\";i:39;s:23:\"534308889be4c4.98954187\";i:40;s:23:\"53430d6feb9652.28859171\";i:41;s:23:\"53430f93867e16.30086612\";i:42;s:23:\"53431154844d84.84254686\";i:43;s:23:\"53431238d73088.03055870\";i:44;s:23:\"534312d26d1632.12672263\";i:45;s:23:\"534313a4144fe2.24140893\";i:46;s:23:\"534315f2c1ba57.40935462\";i:47;s:23:\"534317b4bd5b31.68134422\";i:48;s:23:\"5343184c532ed2.54750566\";i:49;s:23:\"53431e9e65b4d0.75632243\";i:50;s:23:\"53432115174371.71945942\";i:51;s:23:\"53432187676d84.96182643\";i:52;s:23:\"534322be634671.73988354\";i:53;s:23:\"534322cf308207.31582746\";i:54;s:23:\"53443d5a0ecfd4.92834919\";i:55;s:23:\"534441de053061.78168923\";}');
+	('8b3fc8377c78fff7771d36acd446002e',1396999335,'modx.user.contextTokens|a:1:{s:3:\"mgr\";i:1;}modx.mgr.user.token|s:52:\"modx533b3da0c0fff4.95897906_1533ef97fb86f60.84614805\";modx.mgr.session.cookie.lifetime|i:0;newResourceTokens|a:100:{i:0;s:23:\"533efce1d64f24.77577143\";i:1;s:23:\"533f0538525557.26945069\";i:2;s:23:\"533f058a634962.96848991\";i:3;s:23:\"533f06847bbad6.40190637\";i:4;s:23:\"533f07815d7984.14997492\";i:5;s:23:\"533f07931c6695.19383589\";i:6;s:23:\"533f079d9ac528.98732226\";i:7;s:23:\"533f0a2c399361.14064597\";i:8;s:23:\"533f0aa68e32d7.02773253\";i:9;s:23:\"533f0ab2efdae6.14007440\";i:10;s:23:\"533f0ae4ee5411.76831122\";i:11;s:23:\"533f0b37076ac5.84861176\";i:12;s:23:\"533f122fcaf650.79747856\";i:13;s:23:\"533f124b626892.62025129\";i:14;s:23:\"534162774bab44.49908582\";i:15;s:23:\"53416389387eb3.65059856\";i:16;s:23:\"5341639ae65236.56753649\";i:17;s:23:\"534163a7d9ab31.00836807\";i:18;s:23:\"534163bc4b2045.26470868\";i:19;s:23:\"5342f9b871dec6.01987725\";i:20;s:23:\"5342fa6fbe7c32.40966491\";i:21;s:23:\"5342fa895ea6a7.20626607\";i:22;s:23:\"5342fa96995920.92732360\";i:23;s:23:\"5342fad8dcccd2.54041696\";i:24;s:23:\"5342fae87991c1.36263653\";i:25;s:23:\"5342fd2fed4d14.55938974\";i:26;s:23:\"5342fd4d718e97.32475971\";i:27;s:23:\"5342fdf5af16f4.97012286\";i:28;s:23:\"5342ffc8a43ff0.13945435\";i:29;s:23:\"534300770c9485.51138818\";i:30;s:23:\"534300d296bcc8.86605898\";i:31;s:23:\"534300ec4c41f4.73003778\";i:32;s:23:\"534300ffd96868.50619964\";i:33;s:23:\"5343011a2c9656.03837067\";i:34;s:23:\"534304723c3085.46078731\";i:35;s:23:\"534306710589a6.56594530\";i:36;s:23:\"53430687e88950.32321030\";i:37;s:23:\"534307c97e99a8.49395375\";i:38;s:23:\"534307d63585c6.10744670\";i:39;s:23:\"534308889be4c4.98954187\";i:40;s:23:\"53430d6feb9652.28859171\";i:41;s:23:\"53430f93867e16.30086612\";i:42;s:23:\"53431154844d84.84254686\";i:43;s:23:\"53431238d73088.03055870\";i:44;s:23:\"534312d26d1632.12672263\";i:45;s:23:\"534313a4144fe2.24140893\";i:46;s:23:\"534315f2c1ba57.40935462\";i:47;s:23:\"534317b4bd5b31.68134422\";i:48;s:23:\"5343184c532ed2.54750566\";i:49;s:23:\"53431e9e65b4d0.75632243\";i:50;s:23:\"53432115174371.71945942\";i:51;s:23:\"53432187676d84.96182643\";i:52;s:23:\"534322be634671.73988354\";i:53;s:23:\"534322cf308207.31582746\";i:54;s:23:\"53443d5a0ecfd4.92834919\";i:55;s:23:\"534441de053061.78168923\";i:56;s:23:\"53445358385049.05360479\";i:57;s:23:\"53445370a56b80.52562637\";i:58;s:23:\"534454934b6e49.89547006\";i:59;s:23:\"53446c158a2b75.75907353\";i:60;s:23:\"53446cf1590d41.71617359\";i:61;s:23:\"53446e6e2fcbf1.46827163\";i:62;s:23:\"53446ec34a1117.05546044\";i:63;s:23:\"53446fa90b9a89.92347611\";i:64;s:23:\"5344701c49d287.75967905\";i:65;s:23:\"534471d1d35ee2.54529763\";i:66;s:23:\"534471f8a496b6.66326690\";i:67;s:23:\"53447204433448.38461208\";i:68;s:23:\"53447212c38996.50153490\";i:69;s:23:\"5344722b2c0af4.95007362\";i:70;s:23:\"53447233525bb1.28503058\";i:71;s:23:\"534472b29b3568.68990179\";i:72;s:23:\"53447423e20b78.14856670\";i:73;s:23:\"534474d6dbad00.75009047\";i:74;s:23:\"53447545ebaf28.80921489\";i:75;s:23:\"5344757f72f355.44422409\";i:76;s:23:\"5344759d382759.36342319\";i:77;s:23:\"534475a5202989.34245976\";i:78;s:23:\"534475c36f9af1.18882449\";i:79;s:23:\"53447893857496.21490811\";i:80;s:23:\"53447a61541902.36448578\";i:81;s:23:\"53447d8509bbc5.26109431\";i:82;s:23:\"53447d90dda5b3.37937834\";i:83;s:23:\"53447d99ab39e6.90640398\";i:84;s:23:\"53447da5a118b1.50748294\";i:85;s:23:\"53447ec751c572.53346043\";i:86;s:23:\"53447ed6190729.50408401\";i:87;s:23:\"53447ef90624d2.09220594\";i:88;s:23:\"53447f98bc2060.01972994\";i:89;s:23:\"53447faa908f93.86480717\";i:90;s:23:\"53447fb238d467.69245823\";i:91;s:23:\"534480a2991c10.24263080\";i:92;s:23:\"534480d8909663.13594367\";i:93;s:23:\"53448116a42ce8.17071786\";i:94;s:23:\"534481b7aa59f9.84987454\";i:95;s:23:\"534481c9c6e438.00890780\";i:96;s:23:\"534481e092da36.91941246\";i:97;s:23:\"534481e86666f0.73450841\";i:98;s:23:\"5344825935c455.72978685\";i:99;s:23:\"534484a73ab135.51858560\";}');
 
 /*!40000 ALTER TABLE `modx_session` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -1864,11 +1946,11 @@ LOCK TABLES `modx_site_content` WRITE;
 
 INSERT INTO `modx_site_content` (`id`, `type`, `contentType`, `pagetitle`, `longtitle`, `description`, `alias`, `link_attributes`, `published`, `pub_date`, `unpub_date`, `parent`, `isfolder`, `introtext`, `content`, `richtext`, `template`, `menuindex`, `searchable`, `cacheable`, `createdby`, `createdon`, `editedby`, `editedon`, `deleted`, `deletedon`, `deletedby`, `publishedon`, `publishedby`, `menutitle`, `donthit`, `privateweb`, `privatemgr`, `content_dispo`, `hidemenu`, `class_key`, `context_key`, `content_type`, `uri`, `uri_override`, `hide_children_in_tree`, `show_in_tree`, `properties`)
 VALUES
-	(1,'document','text/html','Home','Home Page','','index','',1,0,0,0,1,'','<div class=\"article_heading\">\r\n<h1>Keeping in Touch</h1>\r\n</div>\r\n<div class=\"article_content\"><hr />[[!getResources? &amp;tpl=`blogTpl` &amp;sortby=`menuindex` &includeContent=`1` ]]</div>',1,1,0,1,1,1,1396391345,1,1396904772,0,0,0,0,0,'',0,0,0,0,0,'modDocument','web',1,'',0,0,1,NULL),
-	(2,'document','text/html','Value Statement','Value proposition statement','','','',1,0,0,1,0,'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra ultricies nibh......\r\n','<h2>[[*longtitle]]</h2>\r\n<hr />\r\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra ultricies nibh, in interdum tellus ultrices id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>\r\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra ultricies nibh, in interdum tellus ultrices id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse urna lorem, imperdiet a mattis sed, blandit id elit.</p>',1,1,0,1,1,1,1396393215,1,1396908867,0,0,0,1396393920,1,'',0,0,0,0,0,'modDocument','web',1,'',0,0,1,NULL),
-	(3,'document','text/html','Promotion','Current Promotion ','','','',1,0,0,1,0,'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra ultricies nibh........','<h2>[[*longtitle]]<span style=\"font-size: 12px; font-weight: normal; line-height: 1.5em;\">Â </span></h2>\r\n<hr />\r\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra ultricies nibh, in interdum tellus ultrices id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>\r\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra ultricies nibh, in interdum tellus ultrices id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse urna lorem, imperdiet a mattis sed, blandit id elit.</p>',1,2,1,1,1,1,1396394100,1,1396908582,0,0,0,1396394160,1,'',0,0,0,0,0,'modDocument','web',1,'',0,0,1,NULL),
-	(4,'document','text/html','About','About Us','','','',0,0,0,0,0,'','<section class=\"articles\">\r\n\r\n      <article>\r\n        \r\n        <div class=\"article_heading\">\r\n         <h1>About Us</h1> \r\n        </div>\r\n        \r\n        <div class=\"article_content\">\r\n       \r\n\r\n          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra ultricies nibh, in interdum tellus ultrices id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. </p>          \r\n        </div> \r\n      </article>\r\n    </section>',1,1,1,1,1,1,1396403630,0,0,0,0,0,0,0,'',0,0,0,0,0,'modDocument','web',1,'',0,0,1,NULL),
-	(5,'document','text/html','Contact','Contact Us','','','',0,0,0,0,0,'',' <section class=\"articles\">\r\n\r\n      <article>\r\n        \r\n        <div class=\"article_heading\">\r\n         <h1>Make an appointment</h1> \r\n        </div>\r\n        \r\n        <div class=\"article_content\">\r\n    \r\n          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra ultricies nibh, in interdum tellus ultrices id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. </p>\r\n\r\n          \r\n        </div> \r\n      </article>\r\n      <form method=\"post\" action=\"http:form-echo.herokuapp.com/form-echo\">\r\n                <table class=\"form_field_table\">\r\n                  <tr>\r\n                    <td width=\"29%\">Your email:</td>\r\n                    <td width=\"71%\">\r\n                      <input type=\"text\"  name=\"recipient\" value=\"me@example.com\" size=\"40\" />\r\n                    </td>\r\n                  </tr>\r\n                  <tr>\r\n                    <td width=\"29%\">Your name: </td>\r\n                    <td width=\"71%\">\r\n                      <input type=\"text\" name=\"customer_name\" size=\"40\" />\r\n                    </td>\r\n                  </tr>\r\n                  <tr>\r\n                    <td width=\"29%\">Your phone:</td>\r\n                    <td width=\"71%\">\r\n                      <input type=\"text\" name=\"customer_phone\" size=\"40\" />\r\n                    </td>\r\n                  </tr>\r\n                  <tr>\r\n                    <td width=\"29%\">Message:</td>\r\n                    <td width=\"71%\">\r\n                      <textarea name=\"customer_message\" rows=\"7\" cols=\"50\"> </textarea>\r\n                    </td>\r\n                  </tr>\r\n                  <tr>\r\n                    <td width=\"29%\">&nbsp</td>\r\n                    <td width=\"71%\">\r\n                      <div class=\"buttons\">\r\n                        <a href=\"#\">Never mind</a>  <input name=\"submit\" type=\"submit\" value=\"Send us feedback\" />\r\n                      </div> \r\n                    </td>           \r\n                  </tr>\r\n                </table>                 \r\n              </form>\r\n    </section>',1,1,2,1,1,1,1396403657,1,1396403699,0,0,0,0,0,'',0,0,0,0,0,'modDocument','web',1,'',0,0,1,NULL);
+	(1,'document','text/html','Home','Home Page','','index','',1,0,0,0,1,'','<div class=\"article_heading\">\r\n<h1>Keeping in Touch</h1>\r\n</div>\r\n<div class=\"article_content\"><hr />[[!getResources? &amp;tpl=`blogTpl` &amp;sortby=`menuindex` &includeContent=`1` ]]</div>',1,1,0,1,1,1,1396391345,1,1396995544,0,0,0,0,0,'',0,0,0,0,0,'modDocument','web',1,'',0,0,1,NULL),
+	(2,'document','text/html','Value Statement','Value proposition statement','','','',1,0,0,1,0,'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra ultricies nibh......\r\n','<h2>[[*longtitle]]</h2>\r\n<hr />\r\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra ultricies nibh, in interdum tellus ultrices id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>\r\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra ultricies nibh, in interdum tellus ultrices id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse urna lorem, imperdiet a mattis sed, blandit id elit.</p>',1,1,0,1,1,1,1396393215,1,1396998053,0,0,0,1396393920,1,'',0,0,0,0,0,'modDocument','web',1,'',0,0,1,NULL),
+	(3,'document','text/html','Promotion','Current Promotion ','','','',1,0,0,1,0,'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra ultricies nibh........','<h2>[[*longtitle]]<span style=\"font-size: 12px; font-weight: normal; line-height: 1.5em;\">Â </span></h2>\r\n<hr />\r\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra ultricies nibh, in interdum tellus ultrices id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>\r\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra ultricies nibh, in interdum tellus ultrices id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse urna lorem, imperdiet a mattis sed, blandit id elit.</p>',1,2,0,1,1,1,1396394100,1,1396998080,0,0,0,1396394160,1,'',0,0,0,0,0,'modDocument','web',1,'',0,0,1,NULL),
+	(4,'document','text/html','About','About Us','','','',1,0,0,0,0,'','<div class=\"article_heading\">\r\n<h1>About Us</h1>\r\n</div>\r\n<div class=\"article_content\">\r\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra ultricies nibh, in interdum tellus ultrices id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>\r\n</div>',1,1,0,1,1,1,1396403630,1,1396998355,0,0,0,1396994040,1,'',0,0,0,0,0,'modDocument','web',1,'',0,0,1,NULL),
+	(5,'document','text/html','Contact','Contact Us','','','',1,0,0,0,0,'','<div class=\"article_heading\">\r\n<h1>Make an appointment</h1>\r\n</div>\r\n<div class=\"article_content\">\r\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra ultricies nibh, in interdum tellus ultrices id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>\r\n</div>\r\n<form action=\"http:form-echo.herokuapp.com/form-echo\" method=\"post\">\r\n<table class=\"form_field_table\">\r\n<tbody>\r\n<tr>\r\n<td width=\"29%\">Your email:</td>\r\n<td width=\"71%\"><input type=\"text\" name=\"recipient\" value=\"me@example.com\" size=\"40\" /></td>\r\n</tr>\r\n<tr>\r\n<td width=\"29%\">Your name:</td>\r\n<td width=\"71%\"><input type=\"text\" name=\"customer_name\" size=\"40\" /></td>\r\n</tr>\r\n<tr>\r\n<td width=\"29%\">Your phone:</td>\r\n<td width=\"71%\"><input type=\"text\" name=\"customer_phone\" size=\"40\" /></td>\r\n</tr>\r\n<tr>\r\n<td width=\"29%\">Message:</td>\r\n<td width=\"71%\"><textarea name=\"customer_message\" rows=\"7\" cols=\"50\"> </textarea></td>\r\n</tr>\r\n<tr>\r\n<td width=\"29%\">&amp;nbsp</td>\r\n<td width=\"71%\">\r\n<div class=\"buttons\"><a href=\"#\">Never mind</a> <input type=\"submit\" name=\"submit\" value=\"Send us feedback\" /></div>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n</form>',1,1,0,1,1,1,1396403657,1,1396998807,0,0,0,1396995480,1,'',0,0,0,0,0,'modDocument','web',1,'',0,0,1,NULL);
 
 /*!40000 ALTER TABLE `modx_site_content` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -1907,15 +1989,15 @@ INSERT INTO `modx_site_htmlsnippets` (`id`, `source`, `property_preprocess`, `na
 VALUES
 	(1,1,0,'html_head','',0,1,0,'\n\n\n<html lang=\"en\">\n\n\n  <head>\n   \n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n\n   \n    <title>Telling Touch</title>\n    \n   \n    <link rel=\"stylesheet\" href=\"assets/components/css/stylesheets.css\" />\n    \n   \n    \n  </head>',0,'a:0:{}',0,''),
 	(2,1,0,'header','',0,1,0,' <header> \n      \n\n         <div class=\"logo\"><img src=\"assets/components/images/logo.jpg\" alt=\"Logo\" class=\"float_right\">\n         </div>\n\n          <div class=\"heading\"><h1>Telling Touch</h1>\n\n           <h3 id=\"slogan\">Get in Touch <br>&nbsp;&nbsp;With Your True Self</h3>\n          </div>\n\n        \n      </header>',0,'a:0:{}',0,''),
-	(3,1,0,'nav','',0,1,0,'<div class=\"nav\">\n            <nav>\n              <ul>\n                <li><a href=\"[[~1]]\">Home</a></li>\n                <li><a href=\"[[~4]]\">About</a></li>\n                <li><a href=\"[[~5]]\">Contact Us</a></li>\n              </ul>\n             </nav>\n\n\n			\n                <img src=\"assets/components/images/headshot.jpg\" alt=\"head shot\" class=\"shot\" \" height=\"150\" width=\"150\" />      \n\n\n		[[!getResources? \n    &tpl=`sidebarTpl`\n    &sortby=`menuindex`\n    &includeContent=`1`\n    ]]\n\n\n\n</div>    \n',0,'a:0:{}',0,''),
+	(3,1,0,'nav','',0,1,0,'<div class=\"nav\">\n            <nav>\n              <ul>\n                <li><a href=\"[[~1]]\">Home</a></li>\n                <li><a href=\"[[~4]]\">About</a></li>\n                <li><a href=\"[[~5]]\">Contact Us</a></li>\n              </ul>\n             </nav>\n\n\n			\n                [[*image]]\n\n		[[!getResources? \n    &tpl=`sidebarTpl`\n    &sortby=`menuindex`\n    &includeContent=`1`\n    ]]\n\n\n\n</div>    \n',0,'a:0:{}',0,''),
 	(4,1,0,'footer','',0,1,0,'<footer>\n       Copyright &copy; 2013 <i>Telling Touch</i>\n        <div class=\"contact_information\">\n          <a href=\"mailto:contact@email.com\">contact@email.com</a>\n        </div>\n      </footer>',0,'a:0:{}',0,''),
-	(12,1,0,'sidebarTpl','side bar nav',0,1,0,'<h5>[[+longtitle]]</h5>\n<p>[[+pagetitle]]</p>\n',0,'a:0:{}',0,''),
-	(6,1,0,'Duplicate of html_head','',0,2,0,'<!DOCTYPE html>\n\n\n<html lang=\"en\">\n\n\n  <head>\n   \n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n\n   \n    <title>Telling Touch</title>\n    \n   \n    <link rel=\"stylesheet\" href=\"assets/components/css/stylesheets.css\" />\n    \n   \n    \n  </head>',0,'a:0:{}',0,''),
-	(7,1,0,'Duplicate of nav','',0,2,0,'<div class=\"nav\">\n            <nav>\n              <ul>\n                <li><a href=\"[[~1]]\">Home</a></li>\n                <li><a href=\"[[~4]]\">About</a></li>\n                <li><a href=\"[[~5]]\">Contact Us</a></li>\n              </ul>\n             </nav>\n                <img src=\"assets/components/images/headshot.jpg\" alt=\"head shot\" class=\"shot\" \" height=\"150\" width=\"150\" />           \n          </div>    \n        ',0,'a:0:{}',0,''),
-	(8,1,0,'Duplicate of header','',0,2,0,' <header> \n      \n\n         <div class=\"logo\"><img src=\"assets/components/images/logo.jpg\" alt=\"Logo\" class=\"float_right\">\n         </div>\n\n          <div class=\"heading\"><h1>Telling Touch</h1>\n\n           <h3 id=\"slogan\">Get in Touch <br>&nbsp;&nbsp;With Your True Self</h3>\n          </div>\n\n        \n      </header>',0,'a:0:{}',0,''),
-	(9,1,0,'Duplicate of footer','',0,2,0,'<footer>\n       Copyright &copy; 2013 <i>Telling Touch</i>\n        <div class=\"contact_information\">\n          <a href=\"mailto:contact@email.com\">contact@email.com</a>\n        </div>\n      </footer>',0,'a:0:{}',0,''),
-	(11,1,0,'blogTpl','',0,1,0,'\n <h2>[[+longtitle]]</h2>\n <p>[[+publishedon]]<p>\n  <p>[[+introtext]]</p>\n	<hr>',0,'a:0:{}',0,''),
-	(13,1,0,'Duplicate of sidebarTpl','',0,2,0,'  <h3>[[+longtitle]]</h3>\n<h5>[[+pagetitle]]</h5>\n',0,'a:0:{}',0,'');
+	(12,1,0,'sidebarTpl','side bar nav',0,1,0,'\n<a href=\"[[~[[+id]]]]\"><h4>[[+longtitle]]</h4></a>\n<p>[[+pagetitle]]<p>',0,'a:0:{}',0,''),
+	(6,1,0,'html_headArt','',0,4,0,'<!DOCTYPE html>\n\n\n<html lang=\"en\">\n\n\n  <head>\n   \n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\n\n   \n    <title>Telling Touch</title>\n    \n   \n    <link rel=\"stylesheet\" href=\"assets/components/css/stylesheets.css\" />\n    \n   \n    \n  </head>',0,'a:0:{}',0,''),
+	(7,1,0,'navArt','',0,4,0,'<div class=\"nav\">\n            <nav>\n              <ul>\n                <li><a href=\"[[~1]]\">Home</a></li>\n                <li><a href=\"[[~4]]\">About</a></li>\n                <li><a href=\"[[~5]]\">Contact Us</a></li>\n              </ul>\n             </nav>\n\n\n			\n                [[*image]]\n\n		[[!getResources? \n    &tpl=`sidebarTpl`\n    &sortby=`menuindex`\n    &includeContent=`1`\n    ]]\n\n\n\n</div>    ',0,'a:0:{}',0,''),
+	(8,1,0,'headerArt','',0,4,0,' <header> \n      \n\n         <div class=\"logo\"><img src=\"assets/components/images/logo.jpg\" alt=\"Logo\" class=\"float_right\">\n         </div>\n\n          <div class=\"heading\"><h1>Telling Touch</h1>\n\n           <h3 id=\"slogan\">Get in Touch <br>&nbsp;&nbsp;With Your True Self</h3>\n          </div>\n\n        \n      </header>',0,'a:0:{}',0,''),
+	(9,1,0,'footerArt','',0,4,0,'<footer>\n       Copyright &copy; 2013 <i>Telling Touch</i>\n        <div class=\"contact_information\">\n          <a href=\"mailto:contact@email.com\">contact@email.com</a>\n        </div>\n      </footer>',0,'a:0:{}',0,''),
+	(11,1,0,'blogTpl','',0,1,0,'\n <a href=\"[[~[[+id]]]]\"><h2>[[+longtitle]]</h2></a>\n <p>[[+publishedon]]<p>\n  <p>[[+introtext]]</p>\n	<hr>',0,'a:0:{}',0,''),
+	(13,1,0,'navbarTpl','',0,4,0,'<a href=\"[[~[[+id]]]]\"><h4>[[+longtitle]]</h4></a>\n<p>[[+pagetitle]]<p>',0,'a:0:{}',0,'');
 
 /*!40000 ALTER TABLE `modx_site_htmlsnippets` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -2067,8 +2149,8 @@ LOCK TABLES `modx_site_templates` WRITE;
 
 INSERT INTO `modx_site_templates` (`id`, `source`, `property_preprocess`, `templatename`, `description`, `editor_type`, `category`, `icon`, `template_type`, `content`, `locked`, `properties`, `static`, `static_file`)
 VALUES
-	(1,0,0,'pages','Template',0,0,'',0,'<!DOCTYPE html>\n[[$html_head]]\n  <body>\n\n    <div class=\"container\"> \n      [[$header]]\n      \n\n     [[$nav]]   \n\n<section class=\"articles\">\n\n  <article>\n       [[*content]] \n\n\n\n </article>\n    </section>  \n\n\n      [[$footer]]\n    </div>  \n    \n\n\n  </body>\n</html>',0,'a:0:{}',0,''),
-	(2,0,0,'articles','Articles Template',0,2,'',0,'<!DOCTYPE html>\n[[$html_head]]\n  <body>\n\n    <div class=\"container\"> \n      [[$header]]\n      \n\n     [[$nav]]   \n\n<section class=\"articles\">\n\n  <article>\n       [[*content]] \n\n\n\n </article>\n    </section>  \n\n\n      [[$footer]]\n    </div>  \n    \n\n\n  </body>\n</html>',0,'a:0:{}',0,'');
+	(1,0,0,'pages','Template',0,1,'',0,'<!DOCTYPE html>\n[[$html_head]]\n  <body>\n\n    <div class=\"container\"> \n      [[$header]]\n      \n\n     [[$nav]]   \n\n<section class=\"articles\">\n\n  <article>\n       [[*content]] \n\n\n\n </article>\n    </section>  \n\n\n      [[$footer]]\n    </div>  \n    \n\n\n  </body>\n</html>',0,'a:0:{}',0,''),
+	(2,0,0,'articles','Articles Template',0,4,'',0,'<!DOCTYPE html>\n[[$html_headArt]]\n  <body>\n\n    <div class=\"container\"> \n      [[$headerArt]]\n      \n\n     [[$navArt]]   \n\n<section class=\"articles\">\n\n  <article>\n       [[*content]] \n\n\n\n </article>\n    </section>  \n\n\n      [[$footerArt]]\n    </div>  \n    \n\n\n  </body>\n</html>',0,'a:0:{}',0,'');
 
 /*!40000 ALTER TABLE `modx_site_templates` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -2104,6 +2186,17 @@ CREATE TABLE `modx_site_tmplvar_contentvalues` (
   KEY `tv_cnt` (`tmplvarid`,`contentid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+LOCK TABLES `modx_site_tmplvar_contentvalues` WRITE;
+/*!40000 ALTER TABLE `modx_site_tmplvar_contentvalues` DISABLE KEYS */;
+
+INSERT INTO `modx_site_tmplvar_contentvalues` (`id`, `tmplvarid`, `contentid`, `value`)
+VALUES
+	(1,1,4,'assets/components/images/headshot.jpg'),
+	(2,1,5,'assets/components/images/massage.jpg'),
+	(3,1,1,'assets/components/images/massage.jpg');
+
+/*!40000 ALTER TABLE `modx_site_tmplvar_contentvalues` ENABLE KEYS */;
+UNLOCK TABLES;
 
 
 # Dump of table modx_site_tmplvar_templates
@@ -2118,6 +2211,15 @@ CREATE TABLE `modx_site_tmplvar_templates` (
   PRIMARY KEY (`tmplvarid`,`templateid`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+LOCK TABLES `modx_site_tmplvar_templates` WRITE;
+/*!40000 ALTER TABLE `modx_site_tmplvar_templates` DISABLE KEYS */;
+
+INSERT INTO `modx_site_tmplvar_templates` (`tmplvarid`, `templateid`, `rank`)
+VALUES
+	(1,1,0);
+
+/*!40000 ALTER TABLE `modx_site_tmplvar_templates` ENABLE KEYS */;
+UNLOCK TABLES;
 
 
 # Dump of table modx_site_tmplvars
@@ -2153,6 +2255,15 @@ CREATE TABLE `modx_site_tmplvars` (
   KEY `static` (`static`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+LOCK TABLES `modx_site_tmplvars` WRITE;
+/*!40000 ALTER TABLE `modx_site_tmplvars` DISABLE KEYS */;
+
+INSERT INTO `modx_site_tmplvars` (`id`, `source`, `property_preprocess`, `type`, `name`, `caption`, `description`, `editor_type`, `category`, `locked`, `elements`, `rank`, `display`, `default_text`, `properties`, `input_properties`, `output_properties`, `static`, `static_file`)
+VALUES
+	(1,1,0,'image','image','featured image','featured image',0,1,0,'',0,'image','http://novitasalonandspa.com/wp-content/uploads/2012/07/massage-150x150.jpg','a:0:{}','a:0:{}','a:10:{s:7:\"alttext\";s:9:\"head shot\";s:6:\"hspace\";s:0:\"\";s:6:\"vspace\";s:0:\"\";s:7:\"borsize\";s:0:\"\";s:5:\"align\";s:4:\"none\";s:4:\"name\";s:0:\"\";s:5:\"class\";s:0:\"\";s:2:\"id\";s:0:\"\";s:5:\"style\";s:0:\"\";s:10:\"attributes\";s:0:\"\";}',0,'');
+
+/*!40000 ALTER TABLE `modx_site_tmplvars` ENABLE KEYS */;
+UNLOCK TABLES;
 
 
 # Dump of table modx_system_eventnames
