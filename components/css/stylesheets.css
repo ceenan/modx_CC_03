@@ -68,6 +68,24 @@ header {
   float: left;
   }
 
+
+  nav ul ul {
+  display: none;
+}
+
+  nav ul li:hover > ul {
+    display: block;
+   
+  }
+
+
+   nav ul li:active > ul {
+    color: red;
+  }
+
+
+
+
 li{
  
 list-style: none;
@@ -75,7 +93,6 @@ list-style: none;
 
 li a{
 
-  color:black;
   text-decoration:none ;
   font-family: verdana;
 }
@@ -194,6 +211,11 @@ footer {
     display:inline-block;
 
   }
+
+
+
+
+
   .logo{
 
 display:none;
