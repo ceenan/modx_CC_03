@@ -18,11 +18,6 @@ color: white;
 font-family: Verdana;
 }
 
-a{
-
-  text-decoration:none ;
-  color: black
-}
 
 .container{
   width: 90%;
@@ -68,34 +63,67 @@ header {
   float: left;
   }
 
+  
 
-  nav ul ul {
-  display: none;
-}
-
-  nav ul li:hover > ul {
-    display: block;
-   
+  .active a,
+  .active:active{
+    color:gray;
   }
 
-
-   nav ul li:active > ul {
-    color: red;
-  }
-
-
-
+  
 
 li{
- 
-list-style: none;
+
+ list-style: none;
+}
+
+a{
+
+  text-decoration:none ;
+  color: black
 }
 
 li a{
 
   text-decoration:none ;
   font-family: verdana;
+  color:black;
 }
+
+nav ul ul{
+  display: none;
+}
+
+nav ul li a:hover{
+color:lightblue;
+}
+
+
+nav ul li a:active{
+
+  color:gray;
+}
+
+
+nav ul li:hover > ul {
+    display: block;
+   
+  }   
+
+  nav ul ul li{
+    padding: 5px 5px;
+  }
+
+  nav ul ul li a:hover{
+  color: lightblue;
+
+  }
+    
+  nav ul ul li a:active{
+    color: lightblue;
+    
+  }
+
  	
 .page_heading {
     margin-left: 20px;
